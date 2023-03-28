@@ -24,7 +24,7 @@ const CreatePost = () => {
     if (form.prompt) {
       try {
         setGeneratingImg(true);
-        const res = await fetch("http://localhost:8081/api/openai/imageGeneration", {
+        const res = await fetch("https://aiimagegeneration-server.onrender.com/api/openai/imageGeneration", {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json'
