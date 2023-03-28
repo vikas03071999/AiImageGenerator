@@ -23,7 +23,7 @@ const Home = () => {
     const fetchPosts = async () => {
       setLoading(true)
       try {
-        const res = await fetch("http://localhost:8081/api/posts/postRoute", {
+        const res = await fetch("https://aiimagegeneration-server.onrender.com/api/posts/postRoute", {
           method: 'GET',
           headers: {
             'Content-Type': 'application/json'

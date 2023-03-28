@@ -47,7 +47,7 @@ const CreatePost = () => {
     if (form.photo && form.name && form.prompt) {
       try {
         setSharing(true);
-        const res = await fetch('http://localhost:8081/api/posts/postRoute', {
+        const res = await fetch('https://aiimagegeneration-server.onrender.com/api/posts/postRoute', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json'
